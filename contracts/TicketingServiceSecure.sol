@@ -122,6 +122,7 @@ contract TicketingService is Ownable, ReentrancyGuard {
         ticketContract.burn(tokenId);
         
         (bool success, ) = payable(msg.sender).call{value: PRICE}("");
+        
         if(!success) revert TransferFailed();
 
         emit Refund(msg.sender);

@@ -41,6 +41,7 @@ contract Ticket is ERC721Enumerable {
 
 contract TicketingService is Ownable {
     Ticket immutable ticketContract;
+    
     uint256 public constant PRICE = 0.01 ether;
     uint8 public constant MAX_TICKETS_PER_BATCH = 4;
 
