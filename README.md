@@ -1,3 +1,43 @@
+# Ticketing Service Contract Auditing
+
+### Task 4.1 - Add some security
+
+Your task is to create the new smart contract project in whatever framework you prefer (we learned about Hardhat and Foundry, there are also ApeWorx & Brownie for Python devs and Truffle & Remix for more nostalgic devs, use the best tool(s) for your usecase). Add the following vulnerable contract from this url to the project.
+
+Perform static analysis using Slither on the contract and commit results.
+
+Write property-based (fuzz) tests using Echidna.
+
+#### Task Goals:
+
+Learning about Slither
+
+Learning about Echidna
+
+Learning about the importance of smart contract security
+
+### Task 4.2 - Refactor
+
+Your task is to write TicketingService_Secure.sol smart contract, which is a refactored version of the original contract from Task 4.1. Try to write as secure a contract as possible. There are several vulnerabilities present, but none of them will be caught by Slither and Echidna, so you will need to manually analyze the code as well.
+
+#### Task Goals:
+
+Manually audit the vulnerable code
+
+Refactor the TicketingService.sol contract
+
+### Learning Materials
+
+#### Smart Contract Security
+
+Programming of smart contracts is more like programming hardware than programming software because of the immutable nature of blockchains. Think of it like you are making a rocket; once it’s launched, there’s nothing you can do about it. That’s why testing and security analysis is so important.
+
+#### Trail of Bits
+
+The best way to start using security analysis tools is to install Docker and pull Trail of Bits’ eth-security-toolbox image.
+
+
+
 <br/>
 <p align="center">
 <a href="https://chain.link" target="_blank">
